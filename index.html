@@ -24,25 +24,24 @@
       min-height: 100vh;        /* Чтобы страница занимала всю высоту экрана */
     }
 
-     .left-side {
-      flex: 0 0 40%;
-      background-image: url("my_photo.jpg"); /* Замени на своё название файла */
-      background-position: center center; /* центрируем изображение */
-      background-size: contain;          /* показываем всё изображение */
-      background-repeat: no-repeat;
-      min-height: 100vh;
-      position: relative;
+      /* Левая часть с фото */
+    .left-side {
+      width: 100vw;
+      height: 100vh;
+      background: url('my_photo.jpg') no-repeat center center;
+      background-size: contain; 
+      background-color: #2b2b2b;   
     }
 
-    /* Текст поверх фото */
+    /* Блок с именем поверх фото */
     .photo-name {
-      position: absolute; /* Абсолютное позиционирование относительно .left-side */
-      bottom: 20px;
-      left: 20px;
+      position: absolute;
+      bottom: 20px;       
+      left: 250px;         
       font-size: 2rem;
       color: #fff;
       text-shadow: 1px 1px 2px #000;
-    }
+    } /* <-- Закрывающая скобка для photo-name добавлена */
 
     /* Правая часть с информацией */
     .right-side {

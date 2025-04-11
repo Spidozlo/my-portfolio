@@ -26,23 +26,23 @@
 
      .left-side {
       flex: 0 0 40%;
-      background-image: url("myphoto.jpg");
-      background-position: center bottom; /* Показываем нижнюю часть фото */
+      background-image: url("my_photo.jpg"); /* Замени на своё название файла */
+      background-position: center bottom; /* Центр + нижняя часть фото (можно center center) */
       background-size: cover;
       background-repeat: no-repeat;
       min-height: 100vh;
-      position: relative;
+      position: relative; /* Родительский блок получает relative */
     }
 
-    /* Блок с именем поверх фото */
+    /* Текст поверх фото */
     .photo-name {
-      position: absolute;
-      bottom: 20px;       
-      left: 20px;         
+      position: absolute; /* Абсолютное позиционирование относительно .left-side */
+      bottom: 20px;
+      left: 20px;
       font-size: 2rem;
       color: #fff;
       text-shadow: 1px 1px 2px #000;
-    } /* <-- Закрывающая скобка для photo-name добавлена */
+    }
 
     /* Правая часть с информацией */
     .right-side {

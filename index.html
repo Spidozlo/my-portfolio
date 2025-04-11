@@ -29,12 +29,13 @@
 
     /* Левая часть с фото */
     .left-side {
-      flex: 0 0 40%;            /* Занимает 40% ширины экрана */
-      background-image: url("IMG_9891.jpg"); /* Твоя фотография */
+      flex: 0 0 40%;
+      background-image: url("myphoto.jpg");
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      min-height: 100vh;        /* Высота на весь экран */
+      min-height: 100vh;
+      position: relative; /* Добавляем относительное позиционирование */
     }
 
     /* Правая часть с информацией */
@@ -47,7 +48,14 @@
       padding: 40px;
     }
 
-    /* Общий стиль для блоков */
+    .photo-name {
+      position: absolute;
+      bottom: 20px;       
+      left: 20px;         
+      font-size: 2rem;
+      color: #fff;
+      text-shadow: 1px 1px 2px #000;
+      
     .section {
       margin-bottom: 30px;
     }
@@ -122,7 +130,10 @@
 </head>
 <body>
   <!-- Левая колонка с фото -->
-  <div class="left-side"></div>
+  <div class="left-side">
+    <div class="photo-name">Yauheni Hahiyeu</div>
+  </div>
+
 
   <!-- Правая колонка с информацией -->
   <div class="right-side">
@@ -130,20 +141,22 @@
     <div class="section about-me">
       <div class="section-title">about me</div>
       <div class="info">
-        <span>23 years</span>
-        <span>Live</span>
+        <span>25 years</span>
+        <span>athlete</span>
         <span>Freelance</span>
       </div>
       <p>
-        Привет! Я Евгений Гагиев, увлеченный изучением новых технологий
-        и созданием цифровых решений. У меня есть опыт работы с
-        криптовалютами, безопасностью данных и разработкой на Python.
+        Cалют! Меня зовут Евгений Гагиев, я профессиональный спортсмен с 20 летним стажем. 
+        Так же я имею 5 летний опыт работы с криптовалютами, безопасностью данных
+        и разработкой на Python. Активно ищу для себя новые цели жизни,
+        поедая огромное количество новой информации каждый день! 
       </p>
       <p>
         В последнее время работаю над Telegram-ботами и веб-проектами.
-        Люблю ответственные задачи и создание чего стоящего. 
-        За частую погружась в инетерсующие меня вещи с головой, 
-        подхожу к решению задач со всей ответственностью
+        Люблю ответственные задачи и создание чего стоящего.  
+        Активно ищу для себя новые цели жизни,
+        поедая огромное количество новой информации каждый день! 
+
       </p>
     </div>
 
@@ -154,12 +167,12 @@
         <div class="service-item">
           <i class="fas fa-code"></i>
           <h3>Development</h3>
-          <p>Разработка веб-приложений, ботов и скриптов на Python.</p>
+          <p>Разработка веб-приложений, ботов и скриптов для решения рутинных задач на Python.</p>
         </div>
         <div class="service-item">
           <i class="fas fa-shield-alt"></i>
           <h3>Security</h3>
-          <p>Основы безопасности данных, криптографические методы.</p>
+          <p>Знаком с безопасностью в интернете</p>
         </div>
         <div class="service-item">
           <i class="fas fa-database"></i>

@@ -11,43 +11,72 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
         header {
-            background-color: #333;
+            background-color: #2a2a2a;
             color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-        section {
             padding: 2rem;
+            text-align: center;
+            border-bottom: 5px solid #4CAF50;
         }
-        .content {
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+        .container {
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-top: 3rem;
         }
-        .skills, .projects {
-            display: flex;
-            justify-content: space-around;
-            width: 100%;
+        .avatar {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 5px solid #4CAF50;
+        }
+        .about, .services {
             margin-top: 2rem;
+            text-align: center;
         }
         .section-title {
             font-size: 1.5rem;
             margin-bottom: 1rem;
+            font-weight: bold;
         }
-        .project, .skill {
+        .projects {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .project {
             background-color: #fff;
-            padding: 1rem;
-            border-radius: 5px;
-            width: 200px;
+            padding: 1.5rem;
+            border-radius: 10px;
+            width: 250px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .project h3 {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
         }
         footer {
-            background-color: #333;
+            background-color: #2a2a2a;
             color: white;
             padding: 1rem;
             text-align: center;
+            margin-top: 3rem;
+        }
+        footer p {
+            font-size: 1rem;
         }
     </style>
 </head>
@@ -56,40 +85,37 @@
         <h1>Евгений Гагиев</h1>
         <p>Программист, Специалист по безопасности данных</p>
     </header>
-    <section class="content">
-        <div>
+    <div class="container">
+        <img src="https://github.com/Spidozlo/my-portfolio/blob/main/IMG_9891.PNG?raw=true" alt="Евгений Гагиев" class="avatar">
+        <div class="about">
             <h2 class="section-title">Обо мне</h2>
             <p>Я увлечен изучением технологий, имею опыт работы с криптовалютами и безопасностью данных. Изучаю Python и активно применяю искусственный интеллект в своих проектах.</p>
         </div>
-        <div class="skills">
-            <div class="skill">
-                <h3>Python</h3>
-                <p>Опыт работы 2 года</p>
-            </div>
-            <div class="skill">
-                <h3>Git & GitHub</h3>
-                <p>Знакомство и использование в проектах</p>
-            </div>
-            <div class="skill">
-                <h3>Базы данных</h3>
-                <p>SQLite, PostgreSQL</p>
-            </div>
+        <div class="services">
+            <h2 class="section-title">Мои услуги</h2>
+            <ul>
+                <li>Разработка программных решений на Python</li>
+                <li>Оптимизация процессов с использованием AI</li>
+                <li>Работа с базами данных (SQLite, PostgreSQL)</li>
+                <li>Обеспечение безопасности данных</li>
+            </ul>
         </div>
         <div class="projects">
             <div class="project">
                 <h3>Telegram-бот</h3>
                 <p>Бот для подсчета финансов с использованием Python и библиотеки aiogram.</p>
-                <a href="https://github.com/Spidozlo/telegram-bot">GitHub</a>
+                <a href="https://github.com/Spidozlo/telegram-bot" target="_blank">GitHub</a>
             </div>
             <div class="project">
                 <h3>Веб-сайт</h3>
                 <p>Веб-сайт для поиска развлечений в Минске (в процессе).</p>
-                <a href="https://github.com/Spidozlo/entertainment-site">GitHub</a>
+                <a href="https://github.com/Spidozlo/entertainment-site" target="_blank">GitHub</a>
             </div>
         </div>
-    </section>
+    </div>
     <footer>
         <p>Контактные данные: +375447290682 | zhenya030201@gmail.com</p>
     </footer>
 </body>
 </html>
+

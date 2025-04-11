@@ -27,11 +27,11 @@
      .left-side {
       flex: 0 0 40%;
       background-image: url("my_photo.jpg"); /* Замени на своё название файла */
-      background-position: center bottom; /* Центр + нижняя часть фото (можно center center) */
-      background-size: cover;
+      background-position: center center; /* центрируем изображение */
+      background-size: contain;          /* показываем всё изображение */
       background-repeat: no-repeat;
       min-height: 100vh;
-      position: relative; /* Родительский блок получает relative */
+      position: relative;
     }
 
     /* Текст поверх фото */

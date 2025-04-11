@@ -24,23 +24,25 @@
       min-height: 100vh;        /* Чтобы страница занимала всю высоту экрана */
     }
 
-    /* Левая часть с фото */
-    .left-side {
-       width: 100vw;
-       height: 100vh;
-       background: url('my_photo.jpg') no-repeat center center;
-       background-size: contain; 
-       background-color: #2b2b2b;   
-     }
-    
+     .left-side {
+      flex: 0 0 40%;
+      background-image: url("myphoto.jpg");
+      background-position: center bottom; /* Показываем нижнюю часть фото */
+      background-size: cover;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    /* Блок с именем поверх фото */
     .photo-name {
       position: absolute;
       bottom: 20px;       
-      left: 250px;      
+      left: 20px;         
       font-size: 2rem;
       color: #fff;
       text-shadow: 1px 1px 2px #000;
-    }
+    } /* <-- Закрывающая скобка для photo-name добавлена */
 
     /* Правая часть с информацией */
     .right-side {

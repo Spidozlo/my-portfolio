@@ -26,35 +26,21 @@
 
     /* Левая часть с фото */
     .left-side {
-      flex: 0 0 40%;
-      background-image: url("myphoto.jpg");
-      background-position: center bottom; /* Показываем нижнюю часть фото */
-      background-size: cover;
-      background-repeat: no-repeat;
-      min-height: 100vh;
-      position: relative; /* Родительский блок получает relative */
-    }
+       width: 100vw;
+       height: 100vh;
+       background: url('my_photo.jpg') no-repeat center center;
+       background-size: contain; 
+       background-color: #2b2b2b;   
+     }
     
     .photo-name {
-      position: absolute; /* Абсолютное позиционирование относительно .left-side */
-      bottom: 20px;       /* Отступ снизу */
-      left: 20px;         /* Отступ слева */
+      position: absolute;
+      bottom: 20px;       
+      left: 250px;      
       font-size: 2rem;
       color: #fff;
       text-shadow: 1px 1px 2px #000;
     }
-
-/* Адаптивные стили для мобильных устройств */
-@media (max-width: 768px) {
-  .left-side {
-    flex: 0 0 100%; /* На телефоне можно сделать блок на всю ширину */
-    min-height: 50vh; /* При необходимости можно уменьшить высоту */
-  }
-  .photo-name {
-    bottom: 10px;
-    left: 10px;
-    font-size: 1.5rem;
-  }
 
     /* Правая часть с информацией */
     .right-side {

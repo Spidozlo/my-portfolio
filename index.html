@@ -31,12 +31,22 @@
     .left-side {
       flex: 0 0 40%;
       background-image: url("myphoto.jpg");
-      background-position: center;
+      background-position: center bottom; /* Показываем нижнюю часть фото */
       background-size: cover;
       background-repeat: no-repeat;
       min-height: 100vh;
-      position: relative; /* Добавляем относительное позиционирование */
+      position: relative;
     }
+
+    /* Блок с именем поверх фото */
+    .photo-name {
+      position: absolute;
+      bottom: 20px;       
+      left: 20px;         
+      font-size: 2rem;
+      color: #fff;
+      text-shadow: 1px 1px 2px #000;
+    } /* <-- Закрывающая скобка для photo-name добавлена */
 
     /* Правая часть с информацией */
     .right-side {
@@ -48,14 +58,6 @@
       padding: 40px;
     }
 
-    .photo-name {
-      position: absolute;
-      bottom: 20px;       
-      left: 20px;         
-      font-size: 2rem;
-      color: #fff;
-      text-shadow: 1px 1px 2px #000;
-      
     .section {
       margin-bottom: 30px;
     }
@@ -134,7 +136,6 @@
     <div class="photo-name">Yauheni Hahiyeu</div>
   </div>
 
-
   <!-- Правая колонка с информацией -->
   <div class="right-side">
     <!-- About Me -->
@@ -156,7 +157,6 @@
         Люблю ответственные задачи и создание чего стоящего.  
         Активно ищу для себя новые цели жизни,
         поедая огромное количество новой информации каждый день! 
-
       </p>
     </div>
 
@@ -191,3 +191,4 @@
   </div>
 </body>
 </html>
+

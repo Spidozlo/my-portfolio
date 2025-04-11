@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме Евгения Гагиева</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        section {
+            padding: 2rem;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .skills, .projects {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin-top: 2rem;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .project, .skill {
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 5px;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Евгений Гагиев</h1>
+        <p>Программист, Специалист по безопасности данных</p>
+    </header>
+    <section class="content">
+        <div>
+            <h2 class="section-title">Обо мне</h2>
+            <p>Я увлечен изучением технологий, имею опыт работы с криптовалютами и безопасностью данных. Изучаю Python и активно применяю искусственный интеллект в своих проектах.</p>
+        </div>
+        <div class="skills">
+            <div class="skill">
+                <h3>Python</h3>
+                <p>Опыт работы 2 года</p>
+            </div>
+            <div class="skill">
+                <h3>Git & GitHub</h3>
+                <p>Знакомство и использование в проектах</p>
+            </div>
+            <div class="skill">
+                <h3>Базы данных</h3>
+                <p>SQLite, PostgreSQL</p>
+            </div>
+        </div>
+        <div class="projects">
+            <div class="project">
+                <h3>Telegram-бот</h3>
+                <p>Бот для подсчета финансов с использованием Python и библиотеки aiogram.</p>
+                <a href="https://github.com/Spidozlo/telegram-bot">GitHub</a>
+            </div>
+            <div class="project">
+                <h3>Веб-сайт</h3>
+                <p>Веб-сайт для поиска развлечений в Минске (в процессе).</p>
+                <a href="https://github.com/Spidozlo/entertainment-site">GitHub</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Контактные данные: +375447290682 | zhenya030201@gmail.com</p>
+    </footer>
+</body>
+</html>

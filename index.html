@@ -29,13 +29,11 @@
 
     /* Левая часть с фото */
     .left-side {
-      flex: 0 0 40%;
-      background-image: url("IMG_9891.jpg");
-      background-position: center bottom; /* Показываем нижнюю часть фото */
-      background-size: cover;
-      background-repeat: no-repeat;
-      min-height: 100vh;
-      position: relative;
+      width: 100vw;
+      height: 100vh;
+      background: url('IMG_9891.PNG') no-repeat center center;
+      background-size: contain; /* показывает всё фото без обрезки */
+      background-color: #000;   /* поля вокруг будут чёрные (или любой цвет) */
     }
 
     /* Блок с именем поверх фото */
